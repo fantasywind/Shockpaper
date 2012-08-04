@@ -28,6 +28,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    pictures = [NSArray arrayWithObjects:[UIImage imageNamed:@"London.jpg"], [UIImage imageNamed:@"Madrid.jpg"], [UIImage imageNamed:@"SanFrancisco.jpg"], [UIImage imageNamed:@"Sydney"], nil];
+
+    slideshow.animationImages = pictures;
+    slideshow.animationDuration = 8;
+    slideshow.animationRepeatCount = 0;
+    [slideshow startAnimating];
 }
 
 - (void)viewDidUnload

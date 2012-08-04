@@ -21,6 +21,10 @@
 		8F45B70D15CD55DC00753842 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F45B70C15CD55DC00753842 /* second@2x.png */; };
 		8F45B71015CD55DC00753842 /* SPFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F45B70E15CD55DC00753842 /* SPFirstViewController.xib */; };
 		8F45B71315CD55DC00753842 /* SPSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F45B71115CD55DC00753842 /* SPSecondViewController.xib */; };
+		8F7E0F4B15CD834F00938FE6 /* London.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F7E0F4715CD834F00938FE6 /* London.jpg */; };
+		8F7E0F4C15CD834F00938FE6 /* Madrid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F7E0F4815CD834F00938FE6 /* Madrid.jpg */; };
+		8F7E0F4D15CD834F00938FE6 /* SanFrancisco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F7E0F4915CD834F00938FE6 /* SanFrancisco.jpg */; };
+		8F7E0F4E15CD834F00938FE6 /* Sydney.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F7E0F4A15CD834F00938FE6 /* Sydney.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		8F45B70C15CD55DC00753842 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		8F45B70F15CD55DC00753842 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SPFirstViewController.xib; sourceTree = "<group>"; };
 		8F45B71215CD55DC00753842 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SPSecondViewController.xib; sourceTree = "<group>"; };
+		8F7E0F4715CD834F00938FE6 /* London.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = London.jpg; sourceTree = "<group>"; };
+		8F7E0F4815CD834F00938FE6 /* Madrid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Madrid.jpg; sourceTree = "<group>"; };
+		8F7E0F4915CD834F00938FE6 /* SanFrancisco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SanFrancisco.jpg; sourceTree = "<group>"; };
+		8F7E0F4A15CD834F00938FE6 /* Sydney.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sydney.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +118,10 @@
 		8F45B6F515CD55DC00753842 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8F7E0F4715CD834F00938FE6 /* London.jpg */,
+				8F7E0F4815CD834F00938FE6 /* Madrid.jpg */,
+				8F7E0F4915CD834F00938FE6 /* SanFrancisco.jpg */,
+				8F7E0F4A15CD834F00938FE6 /* Sydney.jpg */,
 				8F45B6F615CD55DC00753842 /* Shockpaper-Info.plist */,
 				8F45B6F715CD55DC00753842 /* InfoPlist.strings */,
 				8F45B6FA15CD55DC00753842 /* main.m */,
@@ -177,6 +189,10 @@
 				8F45B70D15CD55DC00753842 /* second@2x.png in Resources */,
 				8F45B71015CD55DC00753842 /* SPFirstViewController.xib in Resources */,
 				8F45B71315CD55DC00753842 /* SPSecondViewController.xib in Resources */,
+				8F7E0F4B15CD834F00938FE6 /* London.jpg in Resources */,
+				8F7E0F4C15CD834F00938FE6 /* Madrid.jpg in Resources */,
+				8F7E0F4D15CD834F00938FE6 /* SanFrancisco.jpg in Resources */,
+				8F7E0F4E15CD834F00938FE6 /* Sydney.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +330,7 @@
 				8F45B71815CD55DC00753842 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

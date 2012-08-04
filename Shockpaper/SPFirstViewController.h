@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SPFirstViewController : UIViewController
+@interface SPFirstViewController : UIViewController {
+    
+    NSArray *pictures;
+    
+    IBOutlet UIImageView *slideshow;
+}
 
 @end

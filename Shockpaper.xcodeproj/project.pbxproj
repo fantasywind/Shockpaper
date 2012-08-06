@@ -8,11 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4F72491E15D01F1E0089DE09 /* SPThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F72491C15D01F1E0089DE09 /* SPThirdViewController.m */; };
-		4F72491F15D01F1E0089DE09 /* SPThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F72491D15D01F1E0089DE09 /* SPThirdViewController.xib */; };
 		4F72492315D01F710089DE09 /* SPFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F72492115D01F710089DE09 /* SPFourthViewController.m */; };
-		4F72492415D01F710089DE09 /* SPFourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F72492215D01F710089DE09 /* SPFourthViewController.xib */; };
 		4F72492815D01F9D0089DE09 /* SPFifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F72492615D01F9D0089DE09 /* SPFifthViewController.m */; };
-		4F72492915D01F9D0089DE09 /* SPFifthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F72492715D01F9D0089DE09 /* SPFifthViewController.xib */; };
 		8F45B6EF15CD55DC00753842 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F45B6EE15CD55DC00753842 /* UIKit.framework */; };
 		8F45B6F115CD55DC00753842 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F45B6F015CD55DC00753842 /* Foundation.framework */; };
 		8F45B6F315CD55DC00753842 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F45B6F215CD55DC00753842 /* CoreGraphics.framework */; };
@@ -31,6 +28,9 @@
 		8F7E0F4C15CD834F00938FE6 /* Madrid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F7E0F4815CD834F00938FE6 /* Madrid.jpg */; };
 		8F7E0F4D15CD834F00938FE6 /* SanFrancisco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F7E0F4915CD834F00938FE6 /* SanFrancisco.jpg */; };
 		8F7E0F4E15CD834F00938FE6 /* Sydney.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F7E0F4A15CD834F00938FE6 /* Sydney.jpg */; };
+		8F7E108D15D0312100938FE6 /* SPThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F72491D15D01F1E0089DE09 /* SPThirdViewController.xib */; };
+		8F7E108E15D0312400938FE6 /* SPFourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F72492215D01F710089DE09 /* SPFourthViewController.xib */; };
+		8F7E108F15D0312600938FE6 /* SPFifthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F72492715D01F9D0089DE09 /* SPFifthViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -217,6 +217,9 @@
 				8F7E0F4C15CD834F00938FE6 /* Madrid.jpg in Resources */,
 				8F7E0F4D15CD834F00938FE6 /* SanFrancisco.jpg in Resources */,
 				8F7E0F4E15CD834F00938FE6 /* Sydney.jpg in Resources */,
+				8F7E108D15D0312100938FE6 /* SPThirdViewController.xib in Resources */,
+				8F7E108E15D0312400938FE6 /* SPFourthViewController.xib in Resources */,
+				8F7E108F15D0312600938FE6 /* SPFifthViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

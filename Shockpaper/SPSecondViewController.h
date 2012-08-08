@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SPSecondViewController : UIViewController
+@interface SPSecondViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
+
+    NSMutableArray *titles;
+    NSMutableArray *descriptions;
+    NSMutableArray *pictures;
+    
+}
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

@@ -99,9 +99,6 @@
         }
     }
     self.descriptions = tmp_descriptions;
-    
-    NSLog(@"Titles: %@", self.titles);
-    NSLog(@"Reload..");
     [viewController.tableView reloadData];
 }
 

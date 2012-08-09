@@ -33,8 +33,10 @@
     
     SPNewsGather *newsGather = [[SPNewsGather alloc] init];
     viewController2.newsGather = newsGather;
+    UINavigationController *newsTabNaviController = [[UINavigationController alloc] initWithRootViewController:viewController2];
+    
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3, viewController4, viewController5];
+    self.tabBarController.viewControllers = @[viewController1, newsTabNaviController, viewController3, viewController4, viewController5];
     
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];

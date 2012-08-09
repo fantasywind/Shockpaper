@@ -51,23 +51,17 @@
 #pragma mark - UITableViewDataSource Methods
 
 - (UITableViewCell *)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    //NSLog(@"Loading Table Cell Data");
-    NSLog(@"Title when init: %@", self.newsGather.titles);
     UITableViewCell *cell = [tv dequeueReusableCellWithIdentifier:@"cell"];
     if (cell == nil){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
-    //NSLog(@"Status: %@", self.newsGather.titles);
     if (self.newsGather.titles){
         cell.textLabel.text = [self.newsGather.titles objectAtIndex:indexPath.row];
         cell.detailTextLabel.text = [[self.newsGather.descriptions objectAtIndex:indexPath.row] substringToIndex:45];
     } else {
         cell.textLabel.text = @"文章";
     }
-    
-    //UIImage *image = [UIImage imageNamed:@"London.jpg"];
-    //cell.imageView.image = image;
     return cell;
 }
 

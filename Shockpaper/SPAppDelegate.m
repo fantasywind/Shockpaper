@@ -14,6 +14,8 @@
 #import "SPFourthViewController.h"
 #import "SPFifthViewController.h"
 
+#import "SPNewsGather.h"
+
 //Start
 
 @implementation SPAppDelegate
@@ -24,13 +26,17 @@
     // Override point for customization after application launch.
     
     UIViewController *viewController1 = [[SPFirstViewController alloc] initWithNibName:@"SPFirstViewController" bundle:nil];
-    UIViewController *viewController2 = [[SPSecondViewController alloc] initWithNibName:@"SPSecondViewController" bundle:nil];
+    SPSecondViewController *viewController2 = [[SPSecondViewController alloc] initWithNibName:@"SPSecondViewController" bundle:nil];
     UIViewController *viewController3 = [[SPThirdViewController alloc] initWithNibName:@"SPThirdViewController" bundle:nil];
     UIViewController *viewController4 = [[SPFourthViewController alloc] initWithNibName:@"SPFourthViewController" bundle:nil];
     UIViewController *viewController5 = [[SPFifthViewController alloc] initWithNibName:@"SPFifthViewController" bundle:nil];
     
+    SPNewsGather *newsGather = [[SPNewsGather alloc] init];
+    viewController2.newsGather = newsGather;
+    
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3, viewController4, viewController5];
+    
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

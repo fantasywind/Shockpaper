@@ -185,7 +185,7 @@ NSArray *PerformXMLXPathQuery(NSData *document, NSString *query)
     xmlDocPtr doc;
 	
     /* Load XML document */
-	doc = xmlReadMemory([document bytes], [document length], "", NULL, XML_PARSE_RECOVER);
+	doc = xmlReadMemory([document bytes], [document length], "", NULL, XML_PARSE_RECOVER|XML_PARSE_NOCDATA);
 	
     if (doc == NULL)
 	{

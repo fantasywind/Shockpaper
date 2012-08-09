@@ -13,6 +13,9 @@
 @end
 
 @implementation SPSecondViewController
+
+@synthesize newsGather = _newsGather;
+
 @synthesize tableView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -22,6 +25,7 @@
         self.title = NSLocalizedString(@"新聞", @"News");
         self.tabBarItem.image = [UIImage imageNamed:@"newspaper"];
     }
+    
     return self;
 }
 							
@@ -29,6 +33,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"Start Parsing");
+    NSLog(@"Type: %@",self.newsGather);
+    NSLog(@"ssTitlee: %@", self.newsGather.titles);
+    [self.newsGather rssGetter:self];
+    NSLog(@"ssTitlee: %@", self.newsGather.titles);
 }
 
 - (void)viewDidUnload
@@ -45,12 +54,19 @@
 #pragma mark - UITableViewDataSource Methods
 
 - (UITableViewCell *)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    //NSLog(@"Loading Table Cell Data");
+    NSLog(@"Title when init: %@", self.newsGather.titles);
     UITableViewCell *cell = [tv dequeueReusableCellWithIdentifier:@"cell"];
     if (cell == nil){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
-    cell.textLabel.text = @"test";
+    //NSLog(@"Status: %@", self.newsGather.titles);
+    if (self.newsGather.titles){
+        cell.textLabel.text = [self.newsGather.titles objectAtIndex:indexPath.row];
+    } else {
+        cell.textLabel.text = @"3r23";
+    }
     cell.detailTextLabel.text = @"Description\ngfsdgsfdsjkjghskrervfbvhekjfhkjhfakjehfkjhfdskjhelrakvhflkhlksdf";
     UIImage *image = [UIImage imageNamed:@"London.jpg"];
     cell.imageView.image = image;
@@ -58,7 +74,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 3;
+    return 10;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

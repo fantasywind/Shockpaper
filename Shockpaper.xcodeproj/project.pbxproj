@@ -35,7 +35,7 @@
 		8F87552615D3186C00D7B9E2 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F87552515D3186C00D7B9E2 /* libxml2.dylib */; };
 		8F87553215D31A7C00D7B9E2 /* newspaper.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F87553015D31A7C00D7B9E2 /* newspaper.png */; };
 		8F87553315D31A7C00D7B9E2 /* newspaper@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F87553115D31A7C00D7B9E2 /* newspaper@2x.png */; };
-		8F87553B15D3200D00D7B9E2 /* SPNewsGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F87553A15D3200D00D7B9E2 /* SPNewsGetter.m */; };
+		8F87554115D321E400D7B9E2 /* SPNewsGather.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F87554015D321E400D7B9E2 /* SPNewsGather.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,8 +77,8 @@
 		8F87552515D3186C00D7B9E2 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		8F87553015D31A7C00D7B9E2 /* newspaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newspaper.png; sourceTree = "<group>"; };
 		8F87553115D31A7C00D7B9E2 /* newspaper@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newspaper@2x.png"; sourceTree = "<group>"; };
-		8F87553915D3200D00D7B9E2 /* SPNewsGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNewsGetter.h; sourceTree = "<group>"; };
-		8F87553A15D3200D00D7B9E2 /* SPNewsGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNewsGetter.m; sourceTree = "<group>"; };
+		8F87553F15D321E300D7B9E2 /* SPNewsGather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNewsGather.h; sourceTree = "<group>"; };
+		8F87554015D321E400D7B9E2 /* SPNewsGather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNewsGather.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,10 +148,10 @@
 				4F72491D15D01F1E0089DE09 /* SPThirdViewController.xib */,
 				4F72492215D01F710089DE09 /* SPFourthViewController.xib */,
 				4F72492715D01F9D0089DE09 /* SPFifthViewController.xib */,
+				8F87553F15D321E300D7B9E2 /* SPNewsGather.h */,
+				8F87554015D321E400D7B9E2 /* SPNewsGather.m */,
 				8F87552115D3182D00D7B9E2 /* XPathQuery.h */,
 				8F87552215D3182D00D7B9E2 /* XPathQuery.m */,
-				8F87553915D3200D00D7B9E2 /* SPNewsGetter.h */,
-				8F87553A15D3200D00D7B9E2 /* SPNewsGetter.m */,
 				8F45B6F515CD55DC00753842 /* Supporting Files */,
 			);
 			path = Shockpaper;
@@ -260,7 +260,7 @@
 				4F72492315D01F710089DE09 /* SPFourthViewController.m in Sources */,
 				4F72492815D01F9D0089DE09 /* SPFifthViewController.m in Sources */,
 				8F87552315D3182D00D7B9E2 /* XPathQuery.m in Sources */,
-				8F87553B15D3200D00D7B9E2 /* SPNewsGetter.m in Sources */,
+				8F87554115D321E400D7B9E2 /* SPNewsGather.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

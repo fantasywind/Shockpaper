@@ -33,7 +33,6 @@
     
     SPNewsGather *newsGather = [[SPNewsGather alloc] init];
     viewController2.newsGather = newsGather;
-    
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3, viewController4, viewController5];
     

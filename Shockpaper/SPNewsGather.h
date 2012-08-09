@@ -18,10 +18,10 @@
     NSURL *theURL;
 }
 
-@property (weak, nonatomic) NSArray *titles;
-@property (weak, nonatomic) NSMutableArray *links;
-@property (weak, nonatomic) NSMutableArray  *descriptions;
-@property (weak, nonatomic) NSMutableArray *images;
+@property (strong, nonatomic) NSArray *titles;
+@property (strong, nonatomic) NSMutableArray *links;
+@property (strong, nonatomic) NSMutableArray  *descriptions;
+@property (strong, nonatomic) NSMutableArray *images;
 
 - (void)rssGetter:(UIViewController *)controller;
 

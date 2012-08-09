@@ -33,11 +33,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    NSLog(@"Start Parsing");
-    NSLog(@"Type: %@",self.newsGather);
-    NSLog(@"ssTitlee: %@", self.newsGather.titles);
+    self.title = @"峽客新聞";
     [self.newsGather rssGetter:self];
-    NSLog(@"ssTitlee: %@", self.newsGather.titles);
 }
 
 - (void)viewDidUnload
@@ -64,12 +61,13 @@
     //NSLog(@"Status: %@", self.newsGather.titles);
     if (self.newsGather.titles){
         cell.textLabel.text = [self.newsGather.titles objectAtIndex:indexPath.row];
+        cell.detailTextLabel.text = [[self.newsGather.descriptions objectAtIndex:indexPath.row] substringToIndex:45];
     } else {
-        cell.textLabel.text = @"3r23";
+        cell.textLabel.text = @"文章";
     }
-    cell.detailTextLabel.text = @"Description\ngfsdgsfdsjkjghskrervfbvhekjfhkjhfakjehfkjhfdskjhelrakvhflkhlksdf";
-    UIImage *image = [UIImage imageNamed:@"London.jpg"];
-    cell.imageView.image = image;
+    
+    //UIImage *image = [UIImage imageNamed:@"London.jpg"];
+    //cell.imageView.image = image;
     return cell;
 }
 
@@ -78,7 +76,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 100;
+    return 70;
 }
 
 #pragma mark - UITableViewDelegate Methods

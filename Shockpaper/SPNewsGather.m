@@ -79,8 +79,9 @@
     NSMutableArray *tmp_links = [[NSMutableArray alloc] init];
     for (NSDictionary *node in nodes){
         for (id key in node){
-            if ([key isEqualToString:@"nodeContent"] && ![[node objectForKey:key] isEqualToString:@"www.shockpaper.com"]){
+            if ([key isEqualToString:@"nodeContent"] && ![[node objectForKey:key] isEqualToString:@"http://www.shockpaper.com"]){
                 [tmp_links addObject:[node objectForKey:key]];
+                NSLog(@"Link: %@", [node objectForKey:key]);
             }
         }
     }

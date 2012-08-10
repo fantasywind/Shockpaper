@@ -24,6 +24,8 @@
 		8F45B70D15CD55DC00753842 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F45B70C15CD55DC00753842 /* second@2x.png */; };
 		8F45B71015CD55DC00753842 /* SPFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F45B70E15CD55DC00753842 /* SPFirstViewController.xib */; };
 		8F45B71315CD55DC00753842 /* SPSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F45B71115CD55DC00753842 /* SPSecondViewController.xib */; };
+		8F5AA7C715D4C4BE00664A19 /* SPWebBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5AA7C515D4C4BE00664A19 /* SPWebBrowser.m */; };
+		8F5AA7C815D4C4BE00664A19 /* SPWebBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F5AA7C615D4C4BE00664A19 /* SPWebBrowser.xib */; };
 		8F7E0F4B15CD834F00938FE6 /* London.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F7E0F4715CD834F00938FE6 /* London.jpg */; };
 		8F7E0F4C15CD834F00938FE6 /* Madrid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F7E0F4815CD834F00938FE6 /* Madrid.jpg */; };
 		8F7E0F4D15CD834F00938FE6 /* SanFrancisco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F7E0F4915CD834F00938FE6 /* SanFrancisco.jpg */; };
@@ -68,6 +70,9 @@
 		8F45B70C15CD55DC00753842 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		8F45B70F15CD55DC00753842 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SPFirstViewController.xib; sourceTree = "<group>"; };
 		8F45B71215CD55DC00753842 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SPSecondViewController.xib; sourceTree = "<group>"; };
+		8F5AA7C415D4C4BE00664A19 /* SPWebBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPWebBrowser.h; sourceTree = "<group>"; };
+		8F5AA7C515D4C4BE00664A19 /* SPWebBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPWebBrowser.m; sourceTree = "<group>"; };
+		8F5AA7C615D4C4BE00664A19 /* SPWebBrowser.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPWebBrowser.xib; sourceTree = "<group>"; };
 		8F7E0F4715CD834F00938FE6 /* London.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = London.jpg; sourceTree = "<group>"; };
 		8F7E0F4815CD834F00938FE6 /* Madrid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Madrid.jpg; sourceTree = "<group>"; };
 		8F7E0F4915CD834F00938FE6 /* SanFrancisco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SanFrancisco.jpg; sourceTree = "<group>"; };
@@ -152,6 +157,9 @@
 				8F87554015D321E400D7B9E2 /* SPNewsGather.m */,
 				8F87552115D3182D00D7B9E2 /* XPathQuery.h */,
 				8F87552215D3182D00D7B9E2 /* XPathQuery.m */,
+				8F5AA7C415D4C4BE00664A19 /* SPWebBrowser.h */,
+				8F5AA7C515D4C4BE00664A19 /* SPWebBrowser.m */,
+				8F5AA7C615D4C4BE00664A19 /* SPWebBrowser.xib */,
 				8F45B6F515CD55DC00753842 /* Supporting Files */,
 			);
 			path = Shockpaper;
@@ -242,6 +250,7 @@
 				8F7E108F15D0312600938FE6 /* SPFifthViewController.xib in Resources */,
 				8F87553215D31A7C00D7B9E2 /* newspaper.png in Resources */,
 				8F87553315D31A7C00D7B9E2 /* newspaper@2x.png in Resources */,
+				8F5AA7C815D4C4BE00664A19 /* SPWebBrowser.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +270,7 @@
 				4F72492815D01F9D0089DE09 /* SPFifthViewController.m in Sources */,
 				8F87552315D3182D00D7B9E2 /* XPathQuery.m in Sources */,
 				8F87554115D321E400D7B9E2 /* SPNewsGather.m in Sources */,
+				8F5AA7C715D4C4BE00664A19 /* SPWebBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,7 +6,9 @@
 //  Copyright (c) 2012年 Chai Yu Pai. All rights reserved.
 //
 
+#import "SPAppDelegate.h"
 #import "SPSecondViewController.h"
+#import "SPWebBrowser.h"
 
 @interface SPSecondViewController ()
 
@@ -54,11 +56,12 @@
     UITableViewCell *cell = [tv dequeueReusableCellWithIdentifier:@"cell"];
     if (cell == nil){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.selectionStyle = UITableViewCellSelectionStyleBlue;
     }
     if (self.newsGather.titles){
         cell.textLabel.text = [self.newsGather.titles objectAtIndex:indexPath.row];
         cell.detailTextLabel.text = [[self.newsGather.descriptions objectAtIndex:indexPath.row] substringToIndex:45];
+        
     } else {
         cell.textLabel.text = @"文章";
     }
@@ -74,5 +77,17 @@
 }
 
 #pragma mark - UITableViewDelegate Methods
+
+- (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    SPAppDelegate *delegate = (SPAppDelegate *)[[UIApplication sharedApplication] delegate];
+    SPWebBrowser *webBrowser = [[SPWebBrowser alloc] init];
+    NSLog(@"Title: %@", [self.newsGather.titles objectAtIndex:indexPath.row]);
+    NSLog(@"Target: %@", [self.newsGather.links objectAtIndex:indexPath.row]);
+    NSURL *theURL = [[NSURL alloc] initWithString:[self.newsGather.links objectAtIndex:indexPath.row]];
+    (void)[webBrowser initWithURL:theURL andTitle:[self.newsGather.titles objectAtIndex:indexPath.row]];
+    [delegate.newsTabNaviController pushViewController:webBrowser animated:YES];
+    NSLog(@"Show!");
+    [tv deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 @end

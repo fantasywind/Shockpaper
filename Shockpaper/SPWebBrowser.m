@@ -32,11 +32,25 @@
     return self;
 }
 
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    [indicator stopAnimating];
+    app.networkActivityIndicatorVisible = NO;
+    
+}
+
+- (void)webViewDidStartLoad:(UIWebView *)webView {
+    [indicator startAnimating];
+    app.networkActivityIndicatorVisible = YES;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    app = [UIApplication sharedApplication];
+    app.networkActivityIndicatorVisible = YES;
     self.title = theTitle;
+    webView.delegate = self;
     NSURLRequest *requestObject = [NSURLRequest requestWithURL:theURL];
     [webView loadRequest:requestObject];
 }

@@ -57,7 +57,6 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection{
     NSString *xpathQueryString;
     NSArray *nodes;
-    //NSArray *imageNodes;
     
     //Titles
     xpathQueryString = @"//title";
@@ -81,7 +80,6 @@
         for (id key in node){
             if ([key isEqualToString:@"nodeContent"] && ![[node objectForKey:key] isEqualToString:@"http://www.shockpaper.com"]){
                 [tmp_links addObject:[node objectForKey:key]];
-                NSLog(@"Link: %@", [node objectForKey:key]);
             }
         }
     }

@@ -24,7 +24,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"新聞", @"News");
+        self.title = NSLocalizedString(@"峽客新聞", @"News");
         self.tabBarItem.image = [UIImage imageNamed:@"newspaper"];
     }
     
@@ -79,15 +79,14 @@
 #pragma mark - UITableViewDelegate Methods
 
 - (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    SPAppDelegate *delegate = (SPAppDelegate *)[[UIApplication sharedApplication] delegate];
-    SPWebBrowser *webBrowser = [[SPWebBrowser alloc] init];
-    NSLog(@"Title: %@", [self.newsGather.titles objectAtIndex:indexPath.row]);
-    NSLog(@"Target: %@", [self.newsGather.links objectAtIndex:indexPath.row]);
-    NSURL *theURL = [[NSURL alloc] initWithString:[self.newsGather.links objectAtIndex:indexPath.row]];
-    (void)[webBrowser initWithURL:theURL andTitle:[self.newsGather.titles objectAtIndex:indexPath.row]];
-    [delegate.newsTabNaviController pushViewController:webBrowser animated:YES];
-    NSLog(@"Show!");
-    [tv deselectRowAtIndexPath:indexPath animated:YES];
+    if ([self.newsGather.titles objectAtIndex:indexPath.row] != nil){
+        SPAppDelegate *delegate = (SPAppDelegate *)[[UIApplication sharedApplication] delegate];
+        SPWebBrowser *webBrowser = [[SPWebBrowser alloc] init];
+        NSURL *theURL = [[NSURL alloc] initWithString:[self.newsGather.links objectAtIndex:indexPath.row]];
+        (void)[webBrowser initWithURL:theURL andTitle:[self.newsGather.titles objectAtIndex:indexPath.row]];
+        [delegate.newsTabNaviController pushViewController:webBrowser animated:YES];
+        [tv deselectRowAtIndexPath:indexPath animated:YES];
+    }
 }
 
 @end

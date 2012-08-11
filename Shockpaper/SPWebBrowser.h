@@ -12,7 +12,11 @@
     NSURL *theURL;
     NSString *theTitle;
     
+
+    UIApplication *app;
+    
     IBOutlet UIWebView *webView;
+    IBOutlet UIActivityIndicatorView *indicator;
 }
 
 - (id)initWithURL:(NSURL *)url andTitle:(NSString *)string;

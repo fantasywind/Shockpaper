@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F037BB715D29B2B0015B3C8 /* content_iPhone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F037BB615D29B2B0015B3C8 /* content_iPhone.plist */; };
+		4F037BC015D29B980015B3C8 /* small_five.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F037BBA15D29B980015B3C8 /* small_five.png */; };
+		4F037BC115D29B980015B3C8 /* small_four.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F037BBB15D29B980015B3C8 /* small_four.png */; };
+		4F037BC215D29B980015B3C8 /* small_one.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F037BBC15D29B980015B3C8 /* small_one.png */; };
+		4F037BC315D29B980015B3C8 /* small_six.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F037BBD15D29B980015B3C8 /* small_six.png */; };
+		4F037BC415D29B980015B3C8 /* small_three.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F037BBE15D29B980015B3C8 /* small_three.png */; };
+		4F037BC515D29B980015B3C8 /* small_two.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F037BBF15D29B980015B3C8 /* small_two.png */; };
+		4F3B29E415D81DC400E833DC /* SPImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3B29E215D81DC400E833DC /* SPImageViewController.m */; };
+		4F3B29E515D81DC400E833DC /* SPImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F3B29E315D81DC400E833DC /* SPImageViewController.xib */; };
 		4F72491E15D01F1E0089DE09 /* SPThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F72491C15D01F1E0089DE09 /* SPThirdViewController.m */; };
 		4F72492315D01F710089DE09 /* SPFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F72492115D01F710089DE09 /* SPFourthViewController.m */; };
 		4F72492815D01F9D0089DE09 /* SPFifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F72492615D01F9D0089DE09 /* SPFifthViewController.m */; };
@@ -34,6 +43,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F037BB615D29B2B0015B3C8 /* content_iPhone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = content_iPhone.plist; sourceTree = "<group>"; };
+		4F037BBA15D29B980015B3C8 /* small_five.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_five.png; sourceTree = "<group>"; };
+		4F037BBB15D29B980015B3C8 /* small_four.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_four.png; sourceTree = "<group>"; };
+		4F037BBC15D29B980015B3C8 /* small_one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_one.png; sourceTree = "<group>"; };
+		4F037BBD15D29B980015B3C8 /* small_six.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_six.png; sourceTree = "<group>"; };
+		4F037BBE15D29B980015B3C8 /* small_three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_three.png; sourceTree = "<group>"; };
+		4F037BBF15D29B980015B3C8 /* small_two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_two.png; sourceTree = "<group>"; };
+		4F3B29E115D81DC400E833DC /* SPImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPImageViewController.h; sourceTree = "<group>"; };
+		4F3B29E215D81DC400E833DC /* SPImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPImageViewController.m; sourceTree = "<group>"; };
+		4F3B29E315D81DC400E833DC /* SPImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPImageViewController.xib; sourceTree = "<group>"; };
 		4F72491B15D01F1E0089DE09 /* SPThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPThirdViewController.h; sourceTree = "<group>"; };
 		4F72491C15D01F1E0089DE09 /* SPThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPThirdViewController.m; sourceTree = "<group>"; };
 		4F72491D15D01F1E0089DE09 /* SPThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPThirdViewController.xib; sourceTree = "<group>"; };
@@ -83,6 +102,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F037BB915D29B660015B3C8 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				4F037BBA15D29B980015B3C8 /* small_five.png */,
+				4F037BBB15D29B980015B3C8 /* small_four.png */,
+				4F037BBC15D29B980015B3C8 /* small_one.png */,
+				4F037BBD15D29B980015B3C8 /* small_six.png */,
+				4F037BBE15D29B980015B3C8 /* small_three.png */,
+				4F037BBF15D29B980015B3C8 /* small_two.png */,
+				4F3B29E115D81DC400E833DC /* SPImageViewController.h */,
+				4F3B29E215D81DC400E833DC /* SPImageViewController.m */,
+				4F3B29E315D81DC400E833DC /* SPImageViewController.xib */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		8F45B6DF15CD55DC00753842 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +169,7 @@
 				4F72491D15D01F1E0089DE09 /* SPThirdViewController.xib */,
 				4F72492215D01F710089DE09 /* SPFourthViewController.xib */,
 				4F72492715D01F9D0089DE09 /* SPFifthViewController.xib */,
+				4F037BB915D29B660015B3C8 /* images */,
 				8F45B6F515CD55DC00753842 /* Supporting Files */,
 			);
 			path = Shockpaper;
@@ -142,6 +178,7 @@
 		8F45B6F515CD55DC00753842 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4F037BB615D29B2B0015B3C8 /* content_iPhone.plist */,
 				8F7E0F4715CD834F00938FE6 /* London.jpg */,
 				8F7E0F4815CD834F00938FE6 /* Madrid.jpg */,
 				8F7E0F4915CD834F00938FE6 /* SanFrancisco.jpg */,
@@ -220,6 +257,14 @@
 				8F7E108D15D0312100938FE6 /* SPThirdViewController.xib in Resources */,
 				8F7E108E15D0312400938FE6 /* SPFourthViewController.xib in Resources */,
 				8F7E108F15D0312600938FE6 /* SPFifthViewController.xib in Resources */,
+				4F037BB715D29B2B0015B3C8 /* content_iPhone.plist in Resources */,
+				4F037BC015D29B980015B3C8 /* small_five.png in Resources */,
+				4F037BC115D29B980015B3C8 /* small_four.png in Resources */,
+				4F037BC215D29B980015B3C8 /* small_one.png in Resources */,
+				4F037BC315D29B980015B3C8 /* small_six.png in Resources */,
+				4F037BC415D29B980015B3C8 /* small_three.png in Resources */,
+				4F037BC515D29B980015B3C8 /* small_two.png in Resources */,
+				4F3B29E515D81DC400E833DC /* SPImageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +282,7 @@
 				4F72491E15D01F1E0089DE09 /* SPThirdViewController.m in Sources */,
 				4F72492315D01F710089DE09 /* SPFourthViewController.m in Sources */,
 				4F72492815D01F9D0089DE09 /* SPFifthViewController.m in Sources */,
+				4F3B29E415D81DC400E833DC /* SPImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

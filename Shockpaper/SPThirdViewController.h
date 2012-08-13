@@ -7,7 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface SPThirdViewController : UIViewController
 
+@interface SPThirdViewController : UIViewController <UIScrollViewDelegate>
+{
+    NSArray * views;
+    UIPageControl *pageControl;
+    UIScrollView *scrollView;
+    // To be used when scrolls originate from the UIPageControl
+    BOOL pageControlUsed;
+    NSArray *contentList;
+}
+@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, retain) IBOutlet UIPageControl * pageControl;
+@property (nonatomic, retain) NSMutableArray *viewControllers;
+@property (nonatomic, retain) NSArray *contentList;
+
+- (IBAction) changePage:(id)sender;
+//- (void) animateToView:(UIView *)newView;
 @end

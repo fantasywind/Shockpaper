@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SPNewsGather.h"
 
-@interface SPSecondViewController : UIViewController
+@interface SPSecondViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UINavigationControllerDelegate>
+
+@property (strong, nonatomic) SPNewsGather *newsGather;
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

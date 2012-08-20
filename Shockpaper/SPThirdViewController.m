@@ -50,6 +50,9 @@ static NSString *ImageKey = @"imageKey";
     }
     self.viewControllers = controllers;
     
+    pageControl.numberOfPages = kNumberOfPages;
+    pageControl.currentPage = 0;
+    
     // a page is the width of the scroll view
     scrollView.pagingEnabled = YES;
     scrollView.contentSize = CGSizeMake(scrollView.frame.size.width * kNumberOfPages, scrollView.frame.size.height);
@@ -58,8 +61,7 @@ static NSString *ImageKey = @"imageKey";
     scrollView.scrollsToTop = NO;
     scrollView.delegate = self;
     
-    pageControl.numberOfPages = kNumberOfPages;
-    pageControl.currentPage = 0;
+    
     
     // pages are created on demand
     // load the visible page

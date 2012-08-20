@@ -10,6 +10,7 @@
 		4F72491E15D01F1E0089DE09 /* SPThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F72491C15D01F1E0089DE09 /* SPThirdViewController.m */; };
 		4F72492315D01F710089DE09 /* SPFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F72492115D01F710089DE09 /* SPFourthViewController.m */; };
 		4F72492815D01F9D0089DE09 /* SPFifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F72492615D01F9D0089DE09 /* SPFifthViewController.m */; };
+		4FFECBCA15E13F3200043FA8 /* content_iPhone2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FFECBC815E13F3200043FA8 /* content_iPhone2.plist */; };
 		8F45B6EF15CD55DC00753842 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F45B6EE15CD55DC00753842 /* UIKit.framework */; };
 		8F45B6F115CD55DC00753842 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F45B6F015CD55DC00753842 /* Foundation.framework */; };
 		8F45B6F315CD55DC00753842 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F45B6F215CD55DC00753842 /* CoreGraphics.framework */; };
@@ -57,6 +58,7 @@
 		4F72492515D01F9D0089DE09 /* SPFifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFifthViewController.h; sourceTree = "<group>"; };
 		4F72492615D01F9D0089DE09 /* SPFifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFifthViewController.m; sourceTree = "<group>"; };
 		4F72492715D01F9D0089DE09 /* SPFifthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPFifthViewController.xib; sourceTree = "<group>"; };
+		4FFECBC915E13F3200043FA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/content_iPhone2.plist; sourceTree = "<group>"; };
 		8F45B6EA15CD55DC00753842 /* Shockpaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shockpaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F45B6EE15CD55DC00753842 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8F45B6F015CD55DC00753842 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -188,6 +190,7 @@
 		8F45B6F515CD55DC00753842 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4FFECBC815E13F3200043FA8 /* content_iPhone2.plist */,
 				8F7BB37E15D9AF3A00F5D543 /* small_five.png */,
 				8F7BB37F15D9AF3A00F5D543 /* small_four.png */,
 				8F7BB38015D9AF3A00F5D543 /* small_one.png */,
@@ -284,6 +287,7 @@
 				8F7BB38815D9AF3A00F5D543 /* small_three.png in Resources */,
 				8F7BB38915D9AF3A00F5D543 /* small_two.png in Resources */,
 				8F7BB38B15D9AF9400F5D543 /* SPThirdViewController.xib in Resources */,
+				4FFECBCA15E13F3200043FA8 /* content_iPhone2.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +315,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		4FFECBC815E13F3200043FA8 /* content_iPhone2.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FFECBC915E13F3200043FA8 /* en */,
+			);
+			name = content_iPhone2.plist;
+			sourceTree = "<group>";
+		};
 		8F45B6F715CD55DC00753842 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -38,7 +38,7 @@ static NSString *ImageKey = @"imageKey";
 -(void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"content_iPhone" ofType:@"plist"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"content_iPhone2" ofType:@"plist"];
     self.contentList = [NSArray arrayWithContentsOfFile:path];
     
     // view controllers are created lazily
@@ -89,7 +89,6 @@ static NSString *ImageKey = @"imageKey";
     if (page >= kNumberOfPages)
         return;
     
-    NSLog(@"page: %d",page);
     
     // replace the placeholder if necessary
     SPImageViewController *controller = [viewControllers objectAtIndex:page];
